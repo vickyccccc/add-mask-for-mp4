@@ -1,4 +1,8 @@
 # Video Masking Tool
+![License](https://img.shields.io/badge/license-MIT-brightgreen)
+![Python Version](https://img.shields.io/badge/python-3.x-blue)
+![Version](https://img.shields.io/badge/version-v1.0.0-orange)
+![Version](https://img.shields.io/badge/MoviePy-1.0.3-yellow)
 
 ## Overview
 The Video Masking Tool is a graphical user interface (GUI) application that allows users to overlay a colored mask on videos. Users can customize the mask's dimensions, color, and position, and the application supports MP4 video files.
