@@ -59,7 +59,10 @@ def process_videos(
     input_paths, output_folder, mask_width, mask_height, color, position
 ):
     for input_path in input_paths:
-        output_path = os.path.join(output_folder, os.path.basename(input_path))
+        # output_path = os.path.join(output_folder, os.path.basename(input_path))
+        original_name = os.path.splitext(os.path.basename(input_path))[0]  # Get the original filename without extension
+        masked_name = f"m_{original_name}.mp4"  # Create the new filename
+        output_path = os.path.join(output_folder, masked_name)  # Construct the new path
         try:
             final_video = add_mask(input_path, mask_width, mask_height, color, position)
             final_video.write_videofile(output_path, codec="libx264")
