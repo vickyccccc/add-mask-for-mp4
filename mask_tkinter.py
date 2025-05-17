@@ -60,7 +60,9 @@ def process_videos(
 ):
     for input_path in input_paths:
         # output_path = os.path.join(output_folder, os.path.basename(input_path))
-        original_name = os.path.splitext(os.path.basename(input_path))[0]  # Get the original filename without extension
+        original_name = os.path.splitext(os.path.basename(input_path))[
+            0
+        ]  # Get the original filename without extension
         masked_name = f"m_{original_name}.mp4"  # Create the new filename
         output_path = os.path.join(output_folder, masked_name)  # Construct the new path
         try:
